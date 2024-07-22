@@ -1,0 +1,40 @@
+{
+  "user side nav": {
+    "edit profile": "Sửa Hồ Sơ",
+    "my account": "Tài khoản của tôi",
+    "change password": "Đổi mật khẩu",
+    "purchase orders": "Đơn hàng"
+  },
+  "profile": {
+    "my profile": "Hồ sơ của tôi",
+    "manage profile information for account security": "Quản lý thông tin hồ sơ để bảo mật tài khoản",
+    "choose photos": "chọn ảnh",
+    "maximum file size": "dung lượng file tối đa",
+    "format": "định dạng",
+    "name": "tên",
+    "phone number": "số điện thoại",
+    "address": "Địa chỉ",
+    "date of birth": "Ngày sinh",
+    "save": "lưu",
+    "day":"Ngày",
+    "month":"Tháng",
+    "year":"Năm"
+  },
+  "change password": {
+    "change password": "thay đổi mật khẩu",
+    "Manage your password information": "Quản lý thông tin mật khẩu của bạn",
+    "old password": "mật khẩu cũ",
+    "new password": "mật khẩu mới",
+    "confirm password": "xác nhận lại mật khẩu"
+  },
+  "purchase": {
+    "all": "tất cả",
+    "wait for confirmation": "chờ xác nhận",
+    "wait for getting": "chờ lấy hàng",
+    "in progress": "đang vận chuyển",
+    "delivered": "Đã giao",
+    "cancelled": "đã hủy",
+    "total price": "tổng giá tiền",
+    "no orders yet":"Chưa Có Đơn Hàng"
+  }
+}

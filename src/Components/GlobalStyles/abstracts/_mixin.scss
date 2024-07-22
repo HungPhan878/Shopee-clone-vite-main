@@ -1,0 +1,56 @@
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexGap($column, $row: null) {
+  display: flex;
+  align-items: center;
+
+  column-gap: $column;
+  row-gap: $row;
+}
+
+@mixin image($w, $h: $w) {
+  width: $w;
+  height: $h;
+  object-fit: cover;
+}
+
+@mixin absolutionCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin marginCenter($width: null) {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+}
+
+// responsive
+$grid-breakpoints: (
+  
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@mixin breakpoint($key) {
+  $breakpoint: map-get(
+    $map: $grid-breakpoints,
+    $key: $key,
+  );
+  @if ($breakpoint) {
+    @media screen and (max-width: ($breakpoint - 0.02)) {
+      @content;
+    }
+  } @else {
+    @error 'the value #{$key} is not in breakpoints list';
+  }
+}

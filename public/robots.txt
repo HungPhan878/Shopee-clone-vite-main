@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: src/pages/Register/Register.tsx
+Disallow: src/pages/Login/Login.tsx
+
+https://shopee-typescript-sass.vercel.app/sitemap.xml

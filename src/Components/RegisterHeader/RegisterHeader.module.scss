@@ -1,0 +1,47 @@
+@use '../GlobalStyles/abstracts';
+
+.header {
+  &-wrapper {
+    padding: 26px 0;
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+
+    // justify-content: space-between;
+  }
+
+  &-logo {
+    width: 190px;
+    height: 42px;
+    object-fit: cover;
+    fill: var(--primary-color);
+
+    @include abstracts.breakpoint(md) {
+      width: 140px;
+      height: 32px;
+    }
+  }
+
+  &-heading {
+    color: #222;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+
+    @include abstracts.breakpoint(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &-link {
+    margin-left: auto;
+  }
+
+  &-text {
+    text-transform: capitalize;
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+  }
+}

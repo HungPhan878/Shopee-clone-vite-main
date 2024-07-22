@@ -1,0 +1,18 @@
+{
+  "product": "Product",
+  "unit price": "Unit Price",
+  "quantity": "Quantity",
+  "amount of money": "Amount Of Money",
+  "operation": "operation",
+  "delete": "Delete",
+  "select all": "Select All",
+  "delete all": "Delete All",
+  "purchase": "Purchase",
+  "total payment": "Total Payment",
+  "savings": "Savings",
+  "your shopping cart is empty": "Your shopping cart is empty",
+  "buy now": "Buy Now",
+  "register header": {
+    "cart": "Cart"
+  }
+}

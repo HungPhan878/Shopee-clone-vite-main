@@ -1,0 +1,19 @@
+.input-file__image-btn {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+
+  padding: 0 24px;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 2px;
+  height: 40px;
+
+  text-transform: capitalize;
+  color: rgb(75 85 99);
+  background-color: #fff;
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
+  &:hover {
+    background-color: #cccccc10;
+  }
+}

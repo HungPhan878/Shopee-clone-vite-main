@@ -1,0 +1,40 @@
+{
+  "user side nav": {
+    "edit profile": "edit profile",
+    "my account": "my account",
+    "change password": "change password",
+    "purchase orders": "purchase orders"
+  },
+  "profile": {
+    "my profile": "my profile",
+    "manage profile information for account security": "manage profile information for account security",
+    "choose photos": "choose photos",
+    "maximum file size": "maximum file size",
+    "format": "format",
+    "name": "name",
+    "phone number": "phone number",
+    "address": "address",
+    "date of birth": "date of birth",
+    "save": "Save",
+    "day": "Day",
+    "month": "Month",
+    "year": "Year"
+  },
+  "change password": {
+    "change password": "change password",
+    "Manage your password information": "Manage your password information",
+    "old password": "old password",
+    "new password": "new password",
+    "confirm password": "confirm password"
+  },
+  "purchase": {
+    "all": "All",
+    "wait for confirmation": "wait for confirmation",
+    "wait for getting": "wait for getting",
+    "in progress": "in progress",
+    "delivered": "delivered",
+    "cancelled": "cancelled",
+    "total price": "total price",
+    "no orders yet": "no orders yet"
+  }
+}

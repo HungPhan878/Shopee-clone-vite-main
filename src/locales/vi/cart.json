@@ -1,0 +1,18 @@
+{
+  "product": "Sản Phẩm",
+  "unit price": "Đơn Giá",
+  "quantity": "Số Lượng",
+  "amount of money": "Số Tiền",
+  "operation": "Tháo Tác",
+  "delete": "Xóa",
+  "select all": "Chọn tất cả",
+  "delete all": "Xóa tất cả",
+  "purchase": "Đơn Hàng",
+  "total payment": "Tổng Thanh toán",
+  "savings": "Tiết Kiệm",
+  "your shopping cart is empty": "Giỏ Hàng Của Bạn Còn Trống",
+  "buy now": "Mua Ngay",
+  "register header": {
+    "cart": "Giỏ Hàng"
+  }
+}

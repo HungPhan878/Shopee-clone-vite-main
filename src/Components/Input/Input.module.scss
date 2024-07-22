@@ -1,0 +1,50 @@
+.relative {
+  position: relative;
+}
+
+.input {
+  &-form__wrap {
+    margin-bottom: 14px;
+  }
+
+  &-form__input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 2px;
+    font-size: 1.4rem;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.02);
+    background-color: #fff;
+    cursor: text;
+
+    &::placeholder {
+      text-transform: capitalize;
+      font-size: 1.4rem;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &-form__msg {
+    padding-top: 4px;
+    height: 20px;
+    font-size: 1.2rem;
+    color: #ff424f;
+  }
+
+  &-form__icon-eye {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+
+    cursor: pointer;
+  }
+}

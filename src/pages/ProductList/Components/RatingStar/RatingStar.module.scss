@@ -1,0 +1,21 @@
+.aside {
+  &-stars {
+    margin: 12px 0;
+  }
+
+  &-star__link {
+    padding: 4px 0 4px 4px;
+    cursor: pointer;
+  }
+
+  &-star__icon {
+    margin-right: 4px;
+    height: 16px;
+    width: 16px;
+    object-fit: cover;
+  }
+
+  &-star__label {
+    font-size: 1.4rem;
+  }
+}

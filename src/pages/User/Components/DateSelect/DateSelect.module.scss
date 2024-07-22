@@ -1,0 +1,77 @@
+@use 'src/Components/GlobalStyles/abstracts';
+
+.date {
+  &-form__row {
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+
+    @include abstracts.breakpoint(sm) {
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 0;
+    }
+  }
+
+  &-label {
+    padding-top: 12px;
+    width: 20%;
+
+    text-align: right;
+    text-transform: capitalize;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include abstracts.breakpoint(lg) {
+      width: 30%;
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  &-input__wrap {
+    width: 80%;
+
+    @include abstracts.breakpoint(lg) {
+      width: 70%;
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 100%;
+    }
+  }
+
+  &-input__msg {
+    padding-top: 4px;
+    height: 20px;
+
+    font-size: 1.2rem;
+    color: #ff424f;
+  }
+
+  &-select__inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &-select {
+    padding: 8px 12px;
+    border: 1px solid rgb(209 213 219);
+    border-radius: 2px;
+    width: 100%;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+
+    text-transform: none;
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+}

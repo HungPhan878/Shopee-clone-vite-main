@@ -1,0 +1,222 @@
+@use 'src/Components/GlobalStyles/abstracts';
+
+// common
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.profile {
+  &-wrap {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+
+    padding: 0 28px 80px;
+    border-radius: 2px;
+
+    background-color: #fff;
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
+  }
+
+  &-info {
+    padding: 24px 0;
+
+    border-bottom: 1px solid rgb(229 231 235);
+  }
+
+  &-info__heading {
+    text-transform: capitalize;
+    color: rgb(17 24 39);
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+  }
+
+  &-info__desc {
+    margin-top: 4px;
+
+    color: rgb(55 65 81);
+  }
+
+  &-form {
+    margin-top: 32px;
+  }
+
+  &-form__info {
+    padding-right: 18px;
+  }
+
+  &-form__row {
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+
+    @include abstracts.breakpoint(sm) {
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 0;
+    }
+
+    &--reverse {
+      @include abstracts.breakpoint(lg) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &-label {
+    padding-top: 12px;
+    width: 20%;
+
+    text-align: right;
+    text-transform: capitalize;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include abstracts.breakpoint(xl) {
+      width: 25%;
+    }
+
+    @include abstracts.breakpoint(lg) {
+      width: 30%;
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 100%;
+      padding-top: 0;
+      text-align: left;
+    }
+  }
+
+  &-email {
+    padding-top: 12px;
+    color: rgb(55 65 81);
+
+    @include abstracts.breakpoint(sm) {
+      padding-top: 0;
+      padding-bottom: 12px;
+    }
+  }
+
+  &-input__wrap {
+    width: 80%;
+
+    @include abstracts.breakpoint(xl) {
+      width: 75%;
+    }
+
+    @include abstracts.breakpoint(lg) {
+      width: 70%;
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 100%;
+    }
+  }
+
+  &-input__inner {
+    position: relative;
+  }
+
+  &-input {
+    padding: 8px 12px;
+    border-radius: 2px;
+    border: 1px solid rgb(209 213 219);
+    width: 100%;
+
+    cursor: text;
+
+    &:focus {
+      --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+
+      border-color: rgb(107 114 128);
+
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+    }
+
+    &::placeholder {
+      color: #00000060;
+    }
+  }
+
+  // &-input__msg {
+  //   height: 20px;
+
+  //   color: rgb(220 38 38);
+  // }
+
+  &-btn__wrap {
+    padding-left: 16px;
+    margin-left: 20%;
+
+    @include abstracts.breakpoint(lg) {
+      margin-left: 30%;
+    }
+
+    @include abstracts.breakpoint(sm) {
+      padding-top: 15px;
+      margin: 0 15%;
+    }
+  }
+
+  &-btn__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background-color: var(--primary-color);
+
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+
+    &:hover {
+      background-color: #ee4d2dcc;
+    }
+  }
+
+  &-form__image {
+    border-left: 1px solid rgb(229 231 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include abstracts.breakpoint(lg) {
+      border-left-color: transparent;
+    }
+  }
+
+  &-image__wrap {
+    margin: 20px 0;
+    width: 96px;
+    height: 96px;
+
+    overflow: hidden;
+  }
+
+  &-image__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &-image__desc {
+    margin-top: 12px;
+
+    text-transform: capitalize;
+    color: rgb(156 163 175);
+  }
+}

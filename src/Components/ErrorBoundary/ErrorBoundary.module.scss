@@ -1,0 +1,71 @@
+.error-boundary {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: 12.8rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgb(17 24 39);
+  }
+
+  &__desc {
+    position: absolute;
+    padding: 0 8px;
+    border-radius: 4px;
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+
+    transform: rotate(12deg);
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__btn-link {
+    position: relative;
+    display: inline-block;
+
+    font-size: 1.4rem;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 calc(3px + 0px) rgb(59 130 246 / 0.5);
+    }
+
+    &:active {
+      color: rgb(249 115 22);
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__separate {
+    position: absolute;
+    inset: 0;
+
+    background-color: var(--primary-color);
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    border: 1px;
+    border-color: currentColor;
+    padding: 12px 32px;
+  }
+}

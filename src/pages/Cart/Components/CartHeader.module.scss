@@ -1,0 +1,129 @@
+@use 'src/Components/GlobalStyles/abstracts';
+
+.header {
+  &-wrapper {
+    border-bottom-color: #0000001a;
+    border-bottom-width: 1px;
+  }
+
+  &-top__inner {
+    background-color: var(--primary-color);
+  }
+
+  &-bottom {
+    padding: 24px 0;
+
+    background-color: #fff;
+  }
+
+  &-bottom__row {
+    align-items: center;
+  }
+
+  &-bottom__link {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &-logo {
+    height: 42px;
+    width: 128px;
+    fill: var(--primary-color);
+
+    @include abstracts.breakpoint(lg) {
+      width: 140px;
+      height: 35px;
+    }
+
+    @include abstracts.breakpoint(md) {
+      width: 120px;
+      height: 30px;
+    }
+  }
+
+  &-bottom__separate {
+    height: 32px;
+    width: 1px;
+    margin: 0 16px;
+
+    background-color: var(--primary-color);
+  }
+
+  &-bottom__title {
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: var(--primary-color);
+    @include abstracts.breakpoint(lg) {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    @include abstracts.breakpoint(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-search {
+    margin-left: auto;
+    margin-top: 0;
+    width: 66.8%;
+
+    @include abstracts.breakpoint(lg) {
+      width: 100%;
+    }
+
+    @include abstracts.breakpoint(md) {
+      width: 100%;
+    }
+  }
+
+  &-search__input-wrapper {
+    display: flex;
+    border: 2px solid var(--primary-color);
+    border-radius: 2px;
+  }
+
+  &-search__input {
+    flex-grow: 1;
+    padding: 4px 12px;
+    outline-offset: 2px;
+    outline: 2px solid transparent;
+    width: 100%;
+
+    color: #000000;
+    background-color: transparent;
+
+    &::placeholder {
+      text-transform: capitalize;
+      font-size: 1.4rem;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      opacity: 0.8;
+    }
+  }
+
+  &-search__btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 32px;
+    border-radius: 2px;
+
+    background-color: var(--primary-color);
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &-search__icon {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+  }
+}

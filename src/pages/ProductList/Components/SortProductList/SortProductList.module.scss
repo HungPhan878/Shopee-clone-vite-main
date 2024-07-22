@@ -1,0 +1,140 @@
+@use 'src/Components/GlobalStyles/abstracts';
+
+.sort {
+  &__wrap {
+    padding: 16px 12px;
+    background-color: rgba(209, 213, 219, 0.4);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &--mt-8 {
+      @include abstracts.breakpoint(lg) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &__label {
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    padding: 0 16px;
+    height: 32px;
+
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgb(0 0 0);
+    background-color: #fff;
+
+    &:hover {
+      background-color: rgb(241 245 249);
+    }
+
+    &--active {
+      background-color: var(--primary-color);
+      color: #fff;
+
+      &:hover {
+        background-color: #ee4d2dcc;
+      }
+    }
+  }
+
+  &__section {
+    padding: 0 16px;
+    height: 32px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: none;
+
+    color: #000;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: left;
+
+    &:hover {
+      background-color: rgb(241 245 249);
+    }
+
+    &--active {
+      background-color: var(--primary-color);
+      color: #fff;
+
+      &:hover {
+        background-color: #ee4d2dcc;
+      }
+    }
+  }
+
+  &__option {
+    background-color: #fff;
+    color: #000;
+
+    &--disable {
+      color: #00000080;
+    }
+  }
+
+  &__name-page-current {
+    color: var(--primary-color);
+  }
+
+  &__btns-switch {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-switch {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 32px;
+
+    background-color: #ffffff80;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+      var(--tw-shadow);
+
+    &:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+
+    &:hover {
+      background-color: rgb(241 245 249);
+    }
+
+    &.disable {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  &__btn-switch-icon {
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,85 @@
+@use 'src/Components/GlobalStyles/abstracts';
+
+.slides {
+  &-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &-row {
+    display: flex;
+
+    transition: transform;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+  }
+
+  &-btns {
+    position: absolute;
+    inset: 0 -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-btn {
+    width: 55px;
+    height: 100px;
+
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: initial;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 30px;
+      height: 35px;
+    }
+  }
+
+  &-btn__arrow {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+
+    @include abstracts.breakpoint(sm) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &-dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid hsla(0, 0%, 53.7%, 0.4);
+    border-radius: 50%;
+
+    background-color: hsla(0, 0%, 100%, 0.4);
+
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    @include abstracts.breakpoint(sm) {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
