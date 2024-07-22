@@ -191,6 +191,11 @@
     width: 100%;
 
     background-color: rgb(249 250 251);
+
+    @include abstracts.breakpoint(sm) {
+      flex-wrap: wrap;
+      gap: 6px;
+    }
   }
 
   &-sell__discount {
@@ -225,6 +230,10 @@
     line-height: 1.6rem;
     color: rgb(255 255 255);
     background-color: var(--primary-color);
+
+    @include abstracts.breakpoint(sm) {
+      margin-left: auto;
+    }
   }
 
   &-qty__label {
