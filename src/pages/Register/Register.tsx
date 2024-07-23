@@ -25,7 +25,8 @@ import { Helmet } from 'react-helmet-async'
 
 const cx = classNames.bind(style)
 
-type FormData = SchemaType
+const registerSchema = schema.pick(['email', 'confirm_password', 'password'])
+type FormData = Pick<SchemaType, 'email' | 'password' | 'confirm_password'>
 
 export default function Register() {
   const { t } = useTranslation(['login'])
@@ -43,12 +44,12 @@ export default function Register() {
       password: '',
       confirm_password: ''
     },
-    resolver: yupResolver(schema)
+    resolver: yupResolver(registerSchema)
   })
 
   // react query
   const registerAccountMutation = useMutation({
-    mutationFn: (body: Omit<FormData, 'confirm_password'>) => registerAccount(body)
+    mutationFn: (body: Pick<FormData, 'email' | 'password'>) => registerAccount(body)
   })
 
   // handler function
@@ -63,17 +64,17 @@ export default function Register() {
           navigate('/')
         },
         onError: (error) => {
-          // console.log(error)
+          console.log(error)
           if (
-            isAxiosUnprocessableEntityError<ErrorResponsiveApi<Omit<FormData, 'confirm_password'>>>(
-              error
-            )
+            isAxiosUnprocessableEntityError<
+              ErrorResponsiveApi<Pick<FormData, 'email' | 'password'>>
+            >(error)
           ) {
             const formError = error.response?.data.data
             if (formError) {
               Object.keys(formError).forEach((key) =>
-                setError(key as keyof Omit<FormData, 'confirm_password'>, {
-                  message: formError[key as keyof Omit<FormData, 'confirm_password'>],
+                setError(key as keyof Pick<FormData, 'email' | 'password'>, {
+                  message: formError[key as keyof Pick<FormData, 'email' | 'password'>],
                   type: 'Server'
                 })
               )
