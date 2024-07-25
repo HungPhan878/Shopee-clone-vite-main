@@ -92,7 +92,7 @@ export default function Login() {
                   <Input
                     name='email'
                     type='email'
-                    value='Hungphanhung9@gmail.com'
+                    defaultValue='Hungphanhung9@gmail.com'
                     placeholder={`Email/${t('phone number')}/${t('user name')}`}
                     register={register}
                     errorMessage={errors.email?.message}
@@ -101,7 +101,7 @@ export default function Login() {
                   <Input
                     name='password'
                     type='password'
-                    value='789789'
+                    defaultValue='789789'
                     placeholder={t('password')}
                     register={register}
                     autoComplete='on'
