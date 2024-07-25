@@ -7,6 +7,12 @@
     padding: 0 65px !important;
   }
 
+  @include abstracts.breakpoint(sm) {
+    &-container {
+      padding: 0 20px !important;
+    }
+  }
+
   &-wrap {
     background-image: url('../../assets/images/shopee-login.jpg');
     background-repeat: no-repeat;
